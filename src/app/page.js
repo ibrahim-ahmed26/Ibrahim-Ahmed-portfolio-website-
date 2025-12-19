@@ -1,7 +1,11 @@
-
+import Body from "./components/Body";
+import Header from "./components/header";
 
 export default function Home() {
   return (
-    <div className="text-amber-900">home</div>
+    <>
+      <Header />
+      <Body />
+    </>
   );
 }
