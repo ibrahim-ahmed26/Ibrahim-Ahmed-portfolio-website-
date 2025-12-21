@@ -3,3 +3,6 @@
   --color-background-black: #000000;
   --color-background-white: #c4c4c4;
 }
+html{
+  scroll-behavior: smooth;
+}

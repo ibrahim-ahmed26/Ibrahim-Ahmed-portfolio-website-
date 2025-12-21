@@ -15,7 +15,6 @@ export default function Body() {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    // Animate diagonal section
     tl.fromTo(
       diagonalRef.current,
       {
@@ -28,7 +27,6 @@ export default function Body() {
       }
     );
 
-    // Animate text elements
     tl.fromTo(
       logoRef.current,
       { opacity: 0, y: -20 },
@@ -62,10 +60,9 @@ export default function Body() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Light background */}
+    <div className="relative flex flex-row w-full h-screen overflow-hidden">
       <div className="absolute inset-0 bg-background-white">
-        <div ref={logoRef} className="absolute top-4 left-4 md:top-8 md:left-8">
+        <div ref={logoRef} className="absolute top-4 left-1 md:top-1 md:left-8">
           <Image
             src="/Logo.png"
             alt="ibrahim ahmed Logo"
@@ -75,9 +72,7 @@ export default function Body() {
             priority
           />
         </div>
-
-        {/* Text Content */}
-        <div className="absolute top-1/2 left-8 md:left-16 lg:left-24 xl:left-32 transform -translate-y-1/2 max-w-xs md:max-w-md lg:max-w-lg">
+        <div className="absolute top-1/2 left-2 md:left-16 lg:left-24 xl:left-32 transform -translate-y-1/2 max-w-xs md:max-w-md lg:max-w-lg">
           <p
             ref={hiRef}
             className="text-gray-600 animate-pulse text-base md:text-lg lg:text-xl mb-1 md:mb-2"
@@ -86,7 +81,7 @@ export default function Body() {
           </p>
           <h1
             ref={nameRef}
-            className="text-3xl sm:text-4xl  animate-pulse md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-2 md:mb-4 leading-tight"
+            className="text-xl sm:text-3xl  animate-pulse md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-2 md:mb-4 leading-tight"
           >
             Ibrahim Ahmed
           </h1>
@@ -99,17 +94,13 @@ export default function Body() {
         </div>
       </div>
 
-      {/* Dark diagonal section */}
       <div
         ref={diagonalRef}
         className="absolute inset-0 bg-background-black"
-        style={{
-          clipPath: "polygon(55% 0, 100% 0, 100% 100%, 35% 100%)",
-        }}
       >
         <div
           ref={photoRef}
-          className="absolute bottom-0 right-4 sm:right-8 md:right-16 lg:right-24 xl:right-32 w-64 sm:w-72 md:w-80 lg:w-96 xl:w-[28rem] h-auto"
+          className="absolute bottom-0 right-4 sm:right-8 md:right-16 lg:right-24 xl:right-32 w-64 sm:w-72 md:w-80 lg:w-96 xl:w-md h-auto"
         >
           <Image
             src="/ibrahim-ahmed.png"
@@ -118,7 +109,7 @@ export default function Body() {
             height={500}
             className="object-contain w-full h-auto"
             priority
-            quality={100}
+            quality={75}
           />
         </div>
       </div>
