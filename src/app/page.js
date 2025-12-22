@@ -1,6 +1,10 @@
 import Aboutme from "./components/Aboutme";
 import Body from "./components/Body";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Header from "./components/header";
+import Projects from "./components/Porjects";
+import Skills from "./components/Skills";
 
 export const metadata = {
   title: "Ibrahim Ahmed - Front-End Developer",
@@ -10,11 +14,11 @@ export const metadata = {
   openGraph: {
     title: "Ibrahim Ahmed - Front-End Developer",
     description: "Passionate Front-End Developer based in Cairo, Egypt. Building responsive and user-friendly web interfaces.",
-    url: "https://yourwebsite.com", 
+    url: "https://yourwebsite.com",
     siteName: "Ibrahim Ahmed Portfolio",
     images: [
       {
-        url: "/ibrahim-ahmed-SEO.png", 
+        url: "/ibrahim-ahmed-SEO.png",
         width: 1200,
         height: 630,
         alt: "Ibrahim Ahmed Portfolio"
@@ -30,7 +34,11 @@ export default function Home() {
     <>
       <Header />
       <Body />
-      <Aboutme/>
+      <Aboutme />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }
