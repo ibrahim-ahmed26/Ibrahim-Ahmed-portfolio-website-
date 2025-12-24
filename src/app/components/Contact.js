@@ -29,7 +29,7 @@ export default function Contact() {
     }, []);
 
     return (
-        <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-8 overflow-hidden min-h-screen">
+        <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-8 overflow-hidden min-h-screen" id="contact">
             <h1 className="md:text-4xl text-2xl text-center font-bold mb-12 text-white">
                 Contact Me
             </h1>
@@ -39,7 +39,6 @@ export default function Contact() {
                 className="max-w-2xl mx-auto"
             >
                 <form className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8 space-y-6">
-                    {/* Name Field */}
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium mb-2">
                             Name
@@ -53,8 +52,6 @@ export default function Contact() {
                             required
                         />
                     </div>
-
-                    {/* Email Field */}
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium mb-2">
                             Email
@@ -68,8 +65,6 @@ export default function Contact() {
                             required
                         />
                     </div>
-
-                    {/* Subject Field */}
                     <div>
                         <label htmlFor="subject" className="block text-sm font-medium mb-2">
                             Subject
@@ -83,8 +78,6 @@ export default function Contact() {
                             required
                         />
                     </div>
-
-                    {/* Message Field */}
                     <div>
                         <label htmlFor="message" className="block text-sm font-medium mb-2">
                             Message
@@ -98,8 +91,6 @@ export default function Contact() {
                             required
                         ></textarea>
                     </div>
-
-                    {/* Submit Button */}
                     <button
                         type="submit"
                         className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1"

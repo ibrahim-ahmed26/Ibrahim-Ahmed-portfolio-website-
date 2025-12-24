@@ -37,7 +37,6 @@ export default function Footer() {
     return (
         <footer className="bg-black text-white py-8">
             <div className="container mx-auto px-4">
-                {/* Social Links */}
                 <div className="flex justify-center items-center gap-6 mb-6">
                     {socialLinks.map((link) => (
                         <a
@@ -52,21 +51,15 @@ export default function Footer() {
                         </a>
                     ))}
                 </div>
-
-                {/* Email */}
                 <div className="text-center mb-4">
                     <a 
                         href="mailto:ibrahimahmed384888@gmail.com"
                         className="text-gray-400 hover:text-white transition-colors"
                     >
-                        ibrahimahmed384888@gmail.com
+                       Ibrahim Ahmed
                     </a>
                 </div>
-
-                {/* Divider */}
                 <div className="border-t border-gray-800 my-6"></div>
-
-                {/* Copyright */}
                 <div className="text-center text-gray-500 text-sm">
                     <p>© {new Date().getFullYear()} Ibrahim Ahmed. All rights reserved.</p>
                 </div>
