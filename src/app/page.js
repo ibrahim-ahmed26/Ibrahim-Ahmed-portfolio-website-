@@ -3,17 +3,27 @@ import Body from "./components/Body";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/header";
-import Projects from "./components/Porjects";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 export const metadata = {
   title: "Ibrahim Ahmed - Front-End Developer",
-  description: "Passionate Front-End Developer based in Cairo, Egypt. Specializing in React, Next.js, and Tailwind CSS.",
-  keywords: ["Ibrahim Ahmed", "Front-End Developer", "React", "Next.js", "Tailwind CSS", "Web Developer", "Cairo"],
+  description:
+    "Passionate Front-End Developer based in Cairo, Egypt. Specializing in React, Next.js, and Tailwind CSS.",
+  keywords: [
+    "Ibrahim Ahmed",
+    "Front-End Developer",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Web Developer",
+    "Cairo",
+  ],
   authors: [{ name: "Ibrahim Ahmed" }],
   openGraph: {
     title: "Ibrahim Ahmed - Front-End Developer",
-    description: "Passionate Front-End Developer based in Cairo, Egypt. Building responsive and user-friendly web interfaces.",
+    description:
+      "Passionate Front-End Developer based in Cairo, Egypt. Building responsive and user-friendly web interfaces.",
     url: "https://yourwebsite.com",
     siteName: "Ibrahim Ahmed Portfolio",
     images: [
@@ -21,7 +31,7 @@ export const metadata = {
         url: "/ibrahim-ahmed-SEO.png",
         width: 1200,
         height: 630,
-        alt: "Ibrahim Ahmed Portfolio"
+        alt: "Ibrahim Ahmed Portfolio",
       },
     ],
     locale: "en_US",
