@@ -94,13 +94,10 @@ export default function Body() {
         </div>
       </div>
 
-      <div
-        ref={diagonalRef}
-        className="absolute inset-0 bg-background-black"
-      >
+      <div ref={diagonalRef} className="absolute inset-0 bg-background-black">
         <div
           ref={photoRef}
-          className="absolute bottom-0 right-4 sm:right-8 md:right-16 lg:right-24 xl:right-32 w-64 sm:w-72 md:w-80 lg:w-96 xl:w-md h-auto"
+          className="absolute bottom-0 opacity-0 right-4 sm:right-8 md:right-16 lg:right-24 xl:right-32 w-64 sm:w-72 md:w-80 lg:w-96 xl:w-md h-auto"
         >
           <Image
             src="/ibrahim-ahmed.png"
@@ -108,7 +105,6 @@ export default function Body() {
             width={500}
             height={500}
             className="object-contain w-full h-auto"
-            priority
             quality={75}
           />
         </div>
