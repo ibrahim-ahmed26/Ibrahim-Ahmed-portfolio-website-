@@ -47,8 +47,34 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Ibrahim Ahmed",
+    jobTitle: "Front-End Developer",
+    url: "https://ibrahim-ahmed-portfolio-website.vercel.app",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Cairo",
+      addressCountry: "Egypt",
+    },
+    knowsAbout: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "Frontend Development",
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         {children}
         <Toaster
