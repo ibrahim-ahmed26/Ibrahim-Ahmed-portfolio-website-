@@ -20,7 +20,7 @@ export const metadata = {
   metadataBase: new URL("https://ibrahim-ahmed-portfolio-website.vercel.app"),
 
   verification: {
-    google: "DtjbWNbnka-W6S49w4xh8INaAfiyF1YhSC4xlfE0oRc",
+    google: "_2QpKM58NR8BEjT1oSQsQskU3NVjdGF2tHw63GYkZ7U",
   },
 
   openGraph: {
