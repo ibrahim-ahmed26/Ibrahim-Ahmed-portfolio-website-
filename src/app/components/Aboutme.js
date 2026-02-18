@@ -88,26 +88,26 @@ export default function AboutSection() {
                 key={card.title}
                 className="bg-zinc-900 border border-zinc-800 rounded-xl
                         hover:bg-zinc-800 transition-colors duration-300"
-              >
-                <div className="text-3xl">{card.icon}</div>
-                <h4 className="text-white">{card.title}</h4>
-                <p className="text-zinc-400 py-2">{card.desc}</p>
-              </div>
-            ))}
-          </div>
+                            >
+                                <div className="text-3xl">{card.icon}</div>
+                                <h4 className="text-white">{card.title}</h4>
+                                <p className="text-zinc-400 py-2">{card.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="text-center  p-2">
+                    <button className="text-white text-xl">
+                        <a
+                            href="/ibrahimahmedFrontend Developer.pdf"
+                            download="Ibrahim-Ahmed-CV.pdf"
+                            className="inline-block bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        >
+                            Download CV
+                        </a>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div className="text-center  p-2">
-          <button className="text-white text-xl">
-            <a
-              href="/Ibrahim Ahmed Hussein - Frontend Developer CV_React js_Next js.pdf"
-              download="Ibrahim-Ahmed-CV.pdf"
-              className="inline-block bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              Download CV
-            </a>
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
